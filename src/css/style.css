@@ -25,7 +25,9 @@ body {
 
 }
 
-
+.nav-list-desktop {
+    display: none;
+}
 
 .nav-bar {
     height: 100px;
@@ -43,7 +45,6 @@ body {
     list-style: none;
     text-align: center;
     transition: .3s;
-
 }
 
 .nav-list .tabs {
@@ -62,7 +63,6 @@ body {
     padding: 11px 129px;
     border: 2px solid white;
     border-radius: 6px;
-
 }
 
 .nav-list .social-media {
@@ -102,8 +102,8 @@ body {
 .img-intro-container {
     box-shadow: 54px 51px 0px var(--Soft-Blue);
     border-radius: 50px 20px 30px 69px;
-    max-height: 395px;
-    max-width: 580px;
+    max-height: 390px;
+    max-width: 579px;
     min-width: 325px;
     align-self: flex-end;
 }
@@ -125,6 +125,7 @@ body {
     border-radius: 15px;
     padding: 10px;
     border: 11px solid black;
+    
 }
 
 .introduction h2 {
@@ -219,8 +220,6 @@ body {
     border-bottom: 1px solid rgb(196 196 196 / 40%);
     font-weight: 400;
     color: var(--Very-Dark-Blue);
-
-
 }
 
 .tab-show p {
@@ -464,6 +463,42 @@ footer .social-media {
 
 
 @media (min-width: 1024px) {
+
+    .hero {
+        padding: 0 60px;
+    }
+
+    .menu-burger-container {
+        display: none;
+    }
+
+    .nav-list-desktop{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        height: 30px;
+        gap: 40px;
+        
+    }
+
+    .nav-list-desktop a{
+        text-decoration: none;
+        color: var(--Very-Dark-Blue);
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .login-desktop {
+      background-color: var(--Soft-Red);
+      padding: 7px 25px;
+      border-radius: 5px;
+    }
+
+    .login-desktop  a{
+        color: #FFF;
+      }
+    
+    
     .features-container{
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -6,6 +6,7 @@ const logo: HTMLImageElement = document.querySelector('.nav-logo');
 const header: HTMLHeadingElement = document.querySelector('.hero');
 
 
+
 export function burger(): void{
     iconBurger.addEventListener('click', () =>{
         if(iconBurger.classList.contains('icon-show')){
@@ -16,6 +17,7 @@ export function burger(): void{
             navList.style.transform = "translateY(0)";
             navList.style.zIndex = '2';
             navList.style.position = 'fixed';
+            
             logo.src = 'src/images/logo-bookmark-white.svg';
             navBar.style.zIndex = '3';
             navBar.style.position = 'fixed';
