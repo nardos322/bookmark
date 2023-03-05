@@ -8,19 +8,22 @@ const btn = document.querySelector('#btn');
 errorIcon.src = './src/images/icon-error.svg';
 errorMessage.textContent = "Whoops, make sure it's an email";
 form.style.textAlign = 'center';
-form.style.width = '306px';
-form.style.position = 'relative';
+// form.style.width = '306px';
+ form.style.position = 'relative';
 function addError() {
-    email.insertAdjacentElement('afterend', errorIcon);
-    errorIcon.classList.add('error-icon');
-    form.insertAdjacentElement('afterbegin', errorContainer);
-    errorContainer.appendChild(email);
-    email.style.marginBottom = '0px';
-    errorContainer.classList.add('error-container');
-    errorContainer.insertAdjacentElement('beforeend', errorMessage);
-    errorMessage.classList.add('error-message');
-    errorIcon.style.display = 'block';
-    console.log('email invalido');
+    
+        email.insertAdjacentElement('afterend', errorIcon);
+        errorIcon.classList.add('error-icon');
+        form.insertAdjacentElement('afterbegin', errorContainer);
+        errorContainer.appendChild(email);
+        email.style.marginBottom = '0px';
+        errorContainer.classList.add('error-container');
+        errorContainer.insertAdjacentElement('beforeend', errorMessage);
+        errorMessage.classList.add('error-message');
+        errorIcon.style.display = 'block';
+        console.log('email invalido');
+    
+   
 }
 const removeError = () => {
     form.removeChild(errorContainer);
@@ -55,3 +58,6 @@ export function contactUs() {
         }
     });
 }
+
+
+

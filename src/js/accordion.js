@@ -40,7 +40,7 @@ export function accordion() {
                 arrowDown[i].style.display = 'block';
                 pAnswers[i].classList.toggle('answer-hide');
                 pAnswers[i].classList.toggle('answer-show');
-                questions[i].style.height = '40px';
+                questions[i].style.height = '60px';
                 questions[i].style.gap = '0';
                 questions[i].style.padding = '0';
             }
